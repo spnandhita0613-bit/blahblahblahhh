@@ -23,7 +23,7 @@ body {
   }
   
   .yes-button {
-    font-size: 1.6em;
+  font-size: 1.6em;
   padding: 14px 30px;
   margin-right: 10px;
   background: linear-gradient(135deg, #ff5f9e, #ff2e63);
@@ -35,7 +35,9 @@ body {
 
   box-shadow: 0 0 15px rgba(255, 95, 158, 0.7);
   animation: heartPulse 1.5s infinite;
-  }
+
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
  
   .no-button {
     font-size: 1.5em;
@@ -67,6 +69,7 @@ body {
     box-shadow: 0 0 12px rgba(255, 95, 158, 0.6);
   }
 }
+
 
 
 

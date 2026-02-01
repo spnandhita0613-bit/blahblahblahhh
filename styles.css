@@ -36,11 +36,7 @@ body {
   box-shadow: 0 0 15px rgba(255, 95, 158, 0.7);
   animation: heartPulse 1.5s infinite;
   }
-  /* 🧈 buttery hover effect */
-.yes-button:hover {
-  filter: brightness(1.15);
-  transform: scale(1.15);
-}
+ 
   .no-button {
     font-size: 1.5em;
     padding: 10px 20px;
@@ -71,6 +67,7 @@ body {
     box-shadow: 0 0 12px rgba(255, 95, 158, 0.6);
   }
 }
+
 
 
 

@@ -23,20 +23,24 @@ body {
   }
   
   .yes-button {
-    font-size: 1.5em;
-  padding: 12px 26px;
+    font-size: 1.6em;
+  padding: 14px 30px;
   margin-right: 10px;
-  background-color: #4caf50;
+  background: linear-gradient(135deg, #ff5f9e, #ff2e63);
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 40px;
   cursor: pointer;
+  font-weight: bold;
 
-  /* ✨ Glow + pulse */
-  box-shadow: 0 0 15px rgba(76, 175, 80, 0.7);
-  animation: pulseGlow 1.6s infinite ease-in-out;
+  box-shadow: 0 0 15px rgba(255, 95, 158, 0.7);
+  animation: heartPulse 1.5s infinite;
   }
-  
+  /* 🧈 buttery hover effect */
+.yes-button:hover {
+  filter: brightness(1.15);
+  transform: scale(1.15);
+}
   .no-button {
     font-size: 1.5em;
     padding: 10px 20px;
@@ -53,20 +57,21 @@ body {
     border-radius: 10px;
     margin-top: 20px;
   }
-@keyframes pulseGlow {
+@keyframes heartPulse {
   0% {
     transform: scale(1);
-    box-shadow: 0 0 10px rgba(76, 175, 80, 0.6);
+    box-shadow: 0 0 12px rgba(255, 95, 158, 0.6);
   }
   50% {
-    transform: scale(1.08);
-    box-shadow: 0 0 25px rgba(76, 175, 80, 1);
+    transform: scale(1.12);
+    box-shadow: 0 0 30px rgba(255, 95, 158, 1);
   }
   100% {
     transform: scale(1);
-    box-shadow: 0 0 10px rgba(76, 175, 80, 0.6);
+    box-shadow: 0 0 12px rgba(255, 95, 158, 0.6);
   }
 }
+
 
 
 
